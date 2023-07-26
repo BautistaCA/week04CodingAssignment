@@ -6,7 +6,7 @@ public class ThirteenPrompts {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("Prompt 1");  		// I do this to make it clear what prompts I'm working on/completed
+		System.out.println("---Prompt 1---");  		// I do this to make it clear what prompts I'm working on/completed
 			int[] ages = {3, 9, 23, 64, 2, 8, 28, 93};	
 		
 			System.out.println((ages[ages.length - 1] - ages[0]));	// [0] is start, [.length - 1] is the end
@@ -20,7 +20,7 @@ public class ThirteenPrompts {
 		}
 		System.out.println(averageAge / agesNew.length); // The result would've left out the decimal as an int
 	
-		System.out.println("Prompt 2");
+		System.out.println('\n' + "---Prompt 2---");
 		
 		String[] names = {"Sam", "Tommy", "Tim", "Sally", "Buck","Bob"};
 		StringBuilder singleString = new StringBuilder(); // Answered 3 and 4 at the same time, wanted to optimize
@@ -34,7 +34,7 @@ public class ThirteenPrompts {
 			System.out.println(averageWords / names.length);
 				System.out.println(singleString);
 		
-		System.out.println("Prompt 4");
+		System.out.println('\n' + "---Prompt 4---");
 			System.out.println("Last element of an array: array[array.length - 1]");
 				System.out.println("First element of an array: array[0]");
 		
@@ -47,33 +47,33 @@ public class ThirteenPrompts {
 			namesAdd+= nameLengths[i3];
 		}
 		
-			System.out.println("Prompt 6");
+			System.out.println('\n' + "---Prompt 6---");
 				System.out.println(namesAdd);
 		
-		System.out.println("Prompt 7");
+		System.out.println('\n' + "---Prompt 7---");
 			System.out.println(concatWord(names[0], ages[0])); // I used the arrays to write less new strings
 	
-				System.out.println("Prompt 8");
+				System.out.println('\n' + "---Prompt 8---");
 					System.out.println(oneWord(names[0], "Jackson"));
 	
-		System.out.println("Prompt 9");
+		System.out.println('\n' + "---Prompt 9---");
 			System.out.println(moreThan100(ages));
 				System.out.println(moreThan100(nameLengths));
 	
-		System.out.println("Prompt 10");
+		System.out.println('\n' + "---Prompt 10---");
 		double[] doubles = Arrays.stream(ages).asDoubleStream().toArray(); // Had to import for this, wanted to try it out
 			System.out.println(dblAverage(doubles));
 	
-		System.out.println("Prompt 11");
+		System.out.println('\n' + "---Prompt 11---");
 		double[] doublestwo = Arrays.stream(agesNew).asDoubleStream().toArray();
 		System.out.println(dblTrueFalse(doubles, doublestwo));
 		System.out.println(dblTrueFalse(doublestwo, doubles));
 			
-			System.out.println("Prompt 12");
+			System.out.println('\n' + "---Prompt 12---");
 		System.out.println(willBuyDrink(moreThan100(ages), namesAdd));
 		//lessThan100 is a boolean method, having it reflect isHotOutside made sense to me lol
 	
-		System.out.println("Prompt 13");
+		System.out.println('\n' + "---Prompt 13---");
 		System.out.println(whichGarage(5.8, 3000));
 		System.out.println(whichGarage(7, 4000));
 		System.out.println(whichGarage(8, 5000));
